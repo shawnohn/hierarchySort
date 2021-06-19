@@ -1,6 +1,6 @@
 module.exports = function sortCategoriesForInsert (inputJson) {
 
-    // Declear Hash Table { Key: parent_id, value: [children] }
+    // Declare Hash Table { Key: parent_id, value: [children] }
     var hashTable = [];
 
     // To use Hash Table properly, replace null of parent_id to 0
