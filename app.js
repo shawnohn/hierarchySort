@@ -15,11 +15,11 @@ fs.readFile(arg_json, 'utf8', (err, data) => {
 
   var jsonOutput = JSON.stringify(result);
 
-  fs.writeFile(arg_out, jsonOutput, "utf8", (err) => {
+  fs.writeFile(arg_out, jsonOutput, 'utf8', (err) => {
     if (err) {
       console.log(`Can not write JSON: ${err.message}`);
       process.exit;
     }
-    console.log("JSON write end");
+    console.log('JSON write end');
   });
 });
